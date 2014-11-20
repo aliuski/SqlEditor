@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SqlEditor</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_copy">Copy SqLite</string>
+    
+    <string name="pref_user_dbprofile">Database</string>
+    <string name="pref_userid">User ID</string>
+    <string name="pref_userid_info">User ID</string>
+    <string name="pref_password">Password</string>
+    <string name="pref_password_info">Password</string>
+    <string name="pref_dbname">Database name</string>
+    <string name="pref_dbname_info">Database name</string>
+    <string name="pref_dbipaddress">Database IP</string>
+    <string name="pref_dbipaddress_info">Database IP</string>
+    <string name="pref_type">Database type</string>
+    <string name="pref_type_info">Database type</string>
+    <string-array name="listentries">
+        <item>XML</item>
+        <item>Sqlite</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

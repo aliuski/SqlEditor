@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/pref_user_dbprofile" >
+        <ListPreference
+            android:key="sqleditorType"
+            android:title="@string/pref_type"
+            android:summary="@string/pref_type_info"
+            android:entries="@array/listentries"
+            android:entryValues="@array/listvalues" />
+        <EditTextPreference
+                android:title="@string/pref_userid"
+                android:summary="@string/pref_userid_info"
+                android:key="sqleditorUserid"/>
+        <EditTextPreference
+                android:title="@string/pref_password"
+                android:summary="@string/pref_password_info"
+                android:key="sqleditorPassword"
+                android:inputType="textPassword" />
+        <EditTextPreference
+                android:title="@string/pref_dbname"
+                android:summary="@string/pref_dbname_info"
+                android:key="sqleditorDBName" />
+        <EditTextPreference
+                android:title="@string/pref_dbipaddress"
+                android:summary="@string/pref_dbipaddress_info"
+                android:key="sqleditorIPAddress" />
+    </PreferenceCategory>
+</PreferenceScreen>

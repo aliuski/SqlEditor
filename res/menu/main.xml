@@ -1,0 +1,95 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sqleditor.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_copy"
+        android:orderInCategory="100"
+        android:title="@string/action_copy"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/command"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Command">
+        <menu>
+            <item
+                android:id="@+id/command1"
+                android:title="select"/>
+            <item
+                android:id="@+id/command2"
+                android:title="from"/>
+            <item
+                android:id="@+id/command3"
+                android:title="where"/>
+            <item
+                android:id="@+id/command4"
+                android:title="insert into"/>
+            <item
+                android:id="@+id/command5"
+                android:title=") values ("/>
+            <item
+                android:id="@+id/command6"
+                android:title="update"/>
+            <item
+                android:id="@+id/command7"
+                android:title="set"/>
+            <item
+                android:id="@+id/command8"
+                android:title="delete from"/> 
+            <item
+                android:id="@+id/command9"
+                android:title="count(*) as ct"/>
+            <item
+                android:id="@+id/command10"
+                android:title="order by"/>
+            <item
+                android:id="@+id/command11"
+                android:title="desc"/>
+            <item
+                android:id="@+id/command12"
+                android:title="limit"/>
+            <item
+                android:id="@+id/command13"
+                android:title="'To Day Date'"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/special"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Special">
+        <menu>
+            <item
+                android:id="@+id/special1"
+                android:title="*"/>
+            <item
+                android:id="@+id/special2"
+                android:title=","/>
+            <item
+                android:id="@+id/special3"
+                android:title="="/>
+            <item
+                android:id="@+id/special4"
+                android:title="("/>
+            <item
+                android:id="@+id/special5"
+                android:title=")"/>
+            <item
+                android:id="@+id/special6"
+                android:title="'"/>
+            <item
+                android:id="@+id/special7"
+                android:title="&lt;"/>
+            <item
+                android:id="@+id/special8"
+                android:title="&gt;"/>
+        </menu>
+    </item>
+</menu>
