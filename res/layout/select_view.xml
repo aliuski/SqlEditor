@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:focusableInTouchMode="true" >
     <TableLayout
@@ -12,17 +13,19 @@
 		android:layout_height="wrap_content" >
 	<Spinner
         android:id="@+id/tableSpinner"
-        android:layout_width="170dp"
+        android:layout_weight="19"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/tableButton"
-        android:layout_width="wrap_content"
+        android:layout_weight="11"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/tableSpinner"
         android:text="Table" />
 	<Button
         android:id="@+id/btnExec"
-        android:layout_width="wrap_content"
+        android:layout_weight="10"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Exec" />
 	</TableRow>
@@ -32,36 +35,30 @@
             android:layout_height="wrap_content" >
     <Spinner
         android:id="@+id/columnSpinner"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/tableButton" />
+        android:layout_width="0dp"
+        android:layout_weight="19"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/columnButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="11"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/columnSpinner"
         android:text="Column" />
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="10"
         android:layout_height="wrap_content"
         android:text="Clear" />
 	</TableRow>
     </TableLayout>
+
     <EditText
         android:id="@+id/txtSqlsearch"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:lines="2"
         android:textSize="18sp" />
-	<ScrollView
-	    android:id="@+id/txtSqlresult2"
-    	android:layout_width="fill_parent"
-    	android:layout_height="fill_parent">
-    <TableLayout
-        android:id="@+id/txtSqlresult"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    </TableLayout>
-    </ScrollView>
+
 </LinearLayout>
